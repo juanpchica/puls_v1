@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta description="Publica tus articulos y date a conocer por el mundo de la web">
+	<meta name="description" content="Publica tus articulos y date a conocer por el mundo de la web">
 	<title>Puls es una excelente herramienta para publicar tus articulos</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	
@@ -20,14 +22,13 @@
 <nav>
 	<ul>
 		<li id="flechita_nav">*</li>
-		<li>Python</li>
-		<li>HTML5</li>
-		<li>Javascript</li>
-		<li>CSS3</li>
-		<li>Django</li>
-		<li id="publicar_nav">Publicar</li>
+		<li><a href="#">Python</a></li>
+		<li><a href="#">HTML5</a></li>
+		<li><a href="#">Javascript</a></li>
+		<li><a href="#">CSS3</a></li>
+		<li><a href="#">Django</a></li>
+		<li id="publicar_nav"><a href="#" class="icon-pluma">Publicar</a></li>
 	</ul>
-
 </nav>
 <section  id="main_content">
 	<article class="item">
@@ -35,7 +36,7 @@
 			<img src="img/imagen.jpg">
 		</figure>
 		<h2 class="item__titulo"><a href="#">Titulo del articulo</a></h2>
-		
+		<div class="item_autor">Por <a href="#">Juan Pablo Chica</a></div>
 		<div class="datos_item">
 			<a class="tag_item" href="#">tag</a>
 			<span class="fecha_item">Hace 5 min</span>
@@ -43,14 +44,21 @@
 		</div>
 		
 		<div class="votacion">
-			<a class="up" href="#"></a> 
+			<a class="up  icon-f-arriba" href="#"></a> 
 			3141
-			<a class="down" href="#"></a> 
+			<a class="down  icon-f-abajo" href="#"></a> 
 			<a class="comentarios_item" href="#">455</a>
-			<a class="guardar_item" href="#"></a>
+			<a class="guardar_item  icon-estrella" href="#"></a>
 		</div>
 
 	</article>
+	
+	
+
+
+
+
+
 </section>
 <footer>
 	<p>Powered by Jp!</p>
