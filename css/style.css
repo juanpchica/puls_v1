@@ -236,3 +236,54 @@ footer p:after{
 }
 
 .comentarios_item,.guardar_item{ float: right;;}
+
+
+/*------------------------------------------------/
+	$Formulario
+/------------------------------------------------*/
+
+
+.formulario{
+	padding: 1em;
+	text-align: right;
+	display: none;
+}
+
+
+.formulario input{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 0.2em 0.6em;
+	
+	
+}
+
+.formulario input[type="submit"]{
+	background: #22bce0;
+	border-color: #22bce0;
+	box-shadow: rgba(0,0,0,.5) 5px 5px 20px;
+	font-style: italic;
+	text-shadow:rgba(0,0,0,.5) 2px 2px 5px;
+	color: white;
+}
+
+
+
+@media screen and (min-width: 840px){
+	#main_content .item{
+		 width: 49%;
+		 float: left;
+	}
+
+	#main_content .item:nth-child(odd){
+		margin-right: 2%;
+	}
+
+	#main_content{
+		overflow: hidden;
+	}  
+	
+
+}
+
+

@@ -6,6 +6,8 @@
 	<title>Puls es una excelente herramienta para publicar tus articulos</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	
 </head>
 <body>
 	
@@ -27,9 +29,16 @@
 		<li><a href="#">Javascript</a></li>
 		<li><a href="#">CSS3</a></li>
 		<li><a href="#">Django</a></li>
-		<li id="publicar_nav"><a href="#" class="icon-pluma">Publicar</a></li>
+		<li id="publicar_nav"><a href="#" class="icon-pluma" id="mostrar-form">Publicar</a></li>
 	</ul>
 </nav>
+
+<form action="" id="formulario" class="formulario">
+	<input type="text" id="titulo" class="titulo" placeholder="Titulo: " required>
+	<input type="text" id="url" placeholder="Url: ">
+	<input type="submit" value="Enviar">
+</form>
+
 <section  id="main_content">
 	<article class="item">
 		<figure class="item__img">
@@ -53,7 +62,71 @@
 
 	</article>
 	
-	
+	<article class="item">
+		<figure class="item__img">
+			<img src="img/imagen.jpg">
+		</figure>
+		<h2 class="item__titulo"><a href="#">Titulo del articulo</a></h2>
+		<div class="item_autor">Por <a href="#">Juan Pablo Chica</a></div>
+		<div class="datos_item">
+			<a class="tag_item" href="#">tag</a>
+			<span class="fecha_item">Hace 5 min</span>
+			
+		</div>
+		
+		<div class="votacion">
+			<a class="up  icon-f-arriba" href="#"></a> 
+			3141
+			<a class="down  icon-f-abajo" href="#"></a> 
+			<a class="comentarios_item" href="#">455</a>
+			<a class="guardar_item  icon-estrella" href="#"></a>
+		</div>
+
+	</article>
+
+	<article class="item">
+		<figure class="item__img">
+			<img src="img/imagen.jpg">
+		</figure>
+		<h2 class="item__titulo"><a href="#">Titulo del articulo</a></h2>
+		<div class="item_autor">Por <a href="#">Juan Pablo Chica</a></div>
+		<div class="datos_item">
+			<a class="tag_item" href="#">tag</a>
+			<span class="fecha_item">Hace 5 min</span>
+			
+		</div>
+		
+		<div class="votacion">
+			<a class="up  icon-f-arriba" href="#"></a> 
+			3141
+			<a class="down  icon-f-abajo" href="#"></a> 
+			<a class="comentarios_item" href="#">455</a>
+			<a class="guardar_item  icon-estrella" href="#"></a>
+		</div>
+
+	</article>
+
+	<article class="item">
+		<figure class="item__img">
+			<img src="img/imagen.jpg">
+		</figure>
+		<h2 class="item__titulo"><a href="#">Titulo del articulo</a></h2>
+		<div class="item_autor">Por <a href="#">Juan Pablo Chica</a></div>
+		<div class="datos_item">
+			<a class="tag_item" href="#">tag</a>
+			<span class="fecha_item">Hace 5 min</span>
+			
+		</div>
+		
+		<div class="votacion">
+			<a class="up  icon-f-arriba" href="#"></a> 
+			3141
+			<a class="down  icon-f-abajo" href="#"></a> 
+			<a class="comentarios_item" href="#">455</a>
+			<a class="guardar_item  icon-estrella" href="#"></a>
+		</div>
+
+	</article>
 
 
 
@@ -64,5 +137,7 @@
 	<p>Powered by Jp!</p>
 </footer>
 
+
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
