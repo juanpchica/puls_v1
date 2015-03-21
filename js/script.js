@@ -13,6 +13,18 @@
 
 
 	
+	if(localStorage.getItem('autosave')){
+		$titulo.val(sessionStorage.getItem('titulo'));
+		$url.val(sessionStorage.getItem('url'));
+	}
+
+	//Cada sg guardo lo de las cajas de texto
+	var id = setInterval(function(){
+		sessionStorage.setItem('titulo',$titulo.val());
+		sessionStorage.setItem('url',$url.val());
+	},1000);
+
+	
 	/*------------------------------------------------/	
 	$Eventos
 	/*--------------------------------------------------*/
@@ -62,6 +74,7 @@ function agregarPost(){
 function mostrarFormulario(){
 
 	$form.slideToggle();
+	$list.slideToggle();
 
 	//Reemplaza lo que es el preventDefault
 	return false;

@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
 	
@@ -133,11 +133,31 @@
 
 
 </section>
+<figure id="mapa">
+	
+</figure>
+
 <footer>
 	<p>Powered by Jp!</p>
 </footer>
 
 
 <script type="text/javascript" src="js/script.js"></script>
+<script src="js/geo.js"></script>
+<script src="js/ajax.js"></script>
+<script>
+	//javascript
+	window.onload = function (){
+		console.log("Ya se disparo el evento onload");
+	}
+
+	//Jquery
+
+	$(function(){
+		console.log("ya se disparo el evento DOMContentLoaded");
+	})
+
+</script>
+
 </body>
 </html>
