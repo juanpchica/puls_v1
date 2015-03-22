@@ -274,6 +274,8 @@ footer p:after{
 }
 
 
+#logos img{ width: 60px;}
+
 @media screen and (min-width: 840px){
 	#main_content .item{
 		 width: 49%;
